@@ -7,12 +7,13 @@
   
   <style>
       .menu{
-          background-color: purple;
+          background-color: #330019;
       }
       .navbar-nav a{
           color: antiquewhite;
           font-weight: bold;
-          
+          border-bottom: 1px solid white;
+          margin-left: 20px;
       }
         .navbar-nav a:hover{
           color: purple;
@@ -20,13 +21,64 @@
             transition: 0.4s;
       }
       .bd{
+         background-image: linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(images/background1.jpg);
+          background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-size: cover;
+      }
+      .bd .container{
+          margin-top: 150px;
+      }
+      .bd .container .row{
+          margin-top: 50px;
+          margin-bottom: 50px;
+          text-align: center;
+      }
+       .bd .container .row .col-sm-8{
           background-color: antiquewhite;
+           opacity: 0.8;
+           padding:35px ;
       }
       .head a{
           color: antiquewhite;
           font-size: 30px;
           text-decoration: none;
       }
+        .vdo:hover{
+               color: white;
+               border: 1px solid white;
+            transition: 0.4s;
+               
+           }
+       .vdo:hover > i{
+               font-size: 30px;
+           }
+      .fut{
+          background-image: linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65));
+      }
+      
+      #l1{
+           stroke-dashoffset: 500;
+           stroke-dasharray: 500;
+          animation: anminay 3s infinite;
+           animation-timing-function: ease-in-out;
+             animation-delay: 1s;
+       }
+         #l2{
+           stroke-dashoffset: 500;
+           stroke-dasharray: 500;
+           animation: anminay 3s infinite;
+           
+           animation-timing-function: ease-in-out;
+             animation-delay: 2s;
+       }
+       @keyframes anminay{
+           to{
+               stroke-dashoffset: 0;
+               opacity: 0.1; 
+           }
+         
+           
 
        </style>
    </head>
@@ -34,10 +86,10 @@
         <div class="container-fluid menu">
             <div class="row">
              <div class="col-sm-3 head">
-                 <a href="#"><img style="height: 150px;" src="images/logo.jpg"> SSS</a>
+                 <a href="#"><img style="height: 150px;" src="images/logo.jpg"> SSSafe</a>
              </div>
-             <div class="col-sm-8" >
-                <nav class="primary-menu" style="float: right; margin-top: 50px;">
+             <div class="col-sm-7" >
+                <nav class="primary-menu" style="margin-left: 100px;float: left; margin-top: 50px;">
                     <ul class="nav navbar-nav" >
                         <li><a class="nava" href="#">HOME</a></li>
                         <li><a class="nava" href="#">SYMPTOMS & DETECTION</a></li>
@@ -46,10 +98,50 @@
                     </ul>
                 </nav>
              </div>
+             <div class="col-sm-1">
+                 <svg style="margin: 10px;" xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 145 145">
+  <g id="Group_1" data-name="Group 1" transform="translate(-108 -195)">
+    
+    <line id="l1" data-name="Line 1" y2="71" transform="translate(180.5 231.5)" fill="none" stroke="#ff9898" stroke-width="11"/>
+    <line id="l2" data-name="Line 2" x2="64" transform="translate(148.5 267.5)" fill="none" stroke="#ff9898" stroke-width="11"/>
+  </g>
+</svg>
+             </div>
          </div>
         </div>
         
         <div class="container-fluid bd">
+            <div class="container">
+             <h1 style="color: pink; font-size: 50px; font-family: rufina; font-weight: bold;"> "Feel safe with SSSafe"  </h1>
+             <div class="row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-8">
+                  <h1> What we can do for you ?</h1>
+                   <p>We want help to provide fast diagnosis of breast cancer using Machine Learning with upto 90% accuracy. Even an experienced doctor fails to detect breast cancer with such high accuracy. Machine Learning is a fast growing technology in the field of medical automation on which you can easily rely. You just have to upload an image and the test will show whether the patient has cancer or not.</p>
+                  </div>
+                  <div class="col-sm-2"><img style="width: 100%; height: 20%; margin: 10px" src="images/doctor.jpg"></div>
+              </div>  
+              <div class="row">
+                   <div class="col-sm-2">
+                  </div>
+                  <div class="col-sm-8">
+                  <h1> What is Breast Cancer ?</h1>
+                   <p>Breast cancer is cancer that develops from breast tissue. Signs of breast cancer may include a lump in the breast, a change in breast shape, dimpling of the skin, fluid coming from the nipple, a newly-inverted nipple, or a red or scaly patch of skin.<br>
+                   
+                   </p>
+                  </div>
+                  <div class="col-sm-2">
+                  </div>
+              </div> 
+              <div class="row">
+                  <a href="#" class="btn btn-danger btn-lg">Check possiblility</a>
+                  <a href="#" class="btn vdo" style="color: antiquewhite"><i class="fa fa-play-circle" aria-hidden="true"></i> Watch a video..</a>
+              </div>
+                
+            </div>
+        </div>
+        
+        <div class="container-fluid fut">
             
         </div>
     </body>
